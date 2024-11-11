@@ -1,5 +1,58 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-kballard-go-shellquote (0.0~git20180428.95032a8-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 14 Dec 2022 04:25:38 +0000
+
+golang-github-kballard-go-shellquote (0.0~git20180428.95032a8-1) unstable; urgency=medium
+
+  [ Debian Janitor (Jelmer Vernooĳ) ]
+  * Set upstream metadata fields:
+    Bug-Database, Bug-Submit, Repository, Repository-Browse.
+
+  [ Anthony Fok ]
+  * New upstream version 0.0~git20180428.95032a8
+  * Add debian/watch
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Apply "cme fix dpkg" fixes:
+    - Organize debian/control fields
+    - Add Testsuite: autopkgtest-pkg-go
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Add myself to the list of Uploaders and to debian/copyright
+
+ -- Anthony Fok <foka@debian.org>  Thu, 05 Nov 2020 03:59:00 -0700
+
+golang-github-kballard-go-shellquote (0.0~git20150810.0.d8ec1a6-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Pirate Praveen ]
+  * Change golang-go to golang-any (builds fine in hurd-i386 with gccgo)
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Change priority: extra -> optional
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 15 Apr 2020 18:38:49 +0530
+
+golang-github-kballard-go-shellquote (0.0~git20150810.0.d8ec1a6-2) unstable; urgency=medium
+
+  [ Tim Potter ]
+  * Add B-D on newer version dh-golang to build in jessie-backports
+  * Add me as uploader
+
+  [ Michael Stapelberg ]
+  * Fix Vcs-Git URL
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sun, 28 Jan 2018 20:11:55 +0100
+
+golang-github-kballard-go-shellquote (0.0~git20150810.0.d8ec1a6-1) unstable; urgency=medium
+
+  * Initial release (Closes: #814385).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 11 Feb 2016 14:21:46 +1100
